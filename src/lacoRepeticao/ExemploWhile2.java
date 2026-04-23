@@ -1,9 +1,30 @@
 package lacoRepeticao;
 
+import java.util.Scanner;
+
 public class ExemploWhile2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		Scanner scanner = new Scanner(System.in);
+		int numero1, numero2, resultado, continua = 1;
+
+		while (continua != 0) {
+
+			System.out.println("Digite primeiro valor: ");
+			numero1 = scanner.nextInt();
+
+			System.out.println("Digite segundo valor: ");
+			numero2 = scanner.nextInt();
+
+			resultado = numero1 + numero2;
+
+			System.out.println("O resultado da soma é: " + resultado);
+			
+			System.out.print("Deseja continuar? Digite um número diferente de 0: ");
+			continua = scanner.nextInt();
+
+		}
 
 	}
 
